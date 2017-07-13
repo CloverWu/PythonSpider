@@ -15,11 +15,7 @@ pattern=soup.find_all('p', 'comment-content')
 for item in pattern:
     print(item.string)
 p=re.findall('<span class="user-stars allstar(.*?)rating"',r.text)
-#print(p)
 for star in p:
-#    print(star)
     sum += int(star)
 print(sum)
 
-
-#print(r.url)
